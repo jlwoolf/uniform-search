@@ -93,7 +93,7 @@ int main(int argc, char* argv[]) {
             printRoute(currentNode);
             break;
         //checks if goal condition is unreachable, printing infinite distance and no route
-        } else if(currentNode->fullWeight >= maxLength) {
+        } else if(currentNode->fullWeight > maxLength) {
             std::cout << "distance: infinity" << std::endl;
             std::cout << "route: " << std::endl << "none" << std::endl;
             break;
